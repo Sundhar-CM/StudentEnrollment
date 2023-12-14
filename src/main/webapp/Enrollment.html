@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Details</title>
+</head>
+<body background="images/book.jpg">
+
+<h1>Student Details</h1>
+<frameset rows="25%,*,15%">
+<fieldset>
+<legend>Student Info</legend>
+<form name="student" action="RegisterServlet" method="get">
+<table>
+<tr>
+<td><label>Name</label></td>
+<td><input type="text" name="stud_name" required placeholder="enter the name"></td>
+</tr>
+<tr>
+<td><label>Email</label></td>
+<td><input type="email" name="email" placeholder="emailid"></td>
+</tr>
+<tr>
+<td><label>Phone No.</label></td>
+<td><input type="number" name="phone" placeholder="contact no"></td>
+</tr>
+<tr>
+<td><label>Gender</label></td>
+<td>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female</td>
+</tr>
+<tr>
+<td><lablel>DOB</lablel></td>
+<td>
+<input type="date" name="dob">
+</td></tr>
+
+<tr>
+<td><label>Course</label></td>
+<td>  
+<select>
+<option value="CST">CST</option>
+<option value="CSE">CSE</option>
+<option value="CSD">CSD</option>
+<option value="IT">IT</option>
+<option value="AIDS">AIDS</option>
+<option value="MECH">MECH</option>
+<option value="CIVIL">CIVIL</option>
+<option value="EEE">EEE</option>
+<option value="ETE">ETE</option>
+<option value="ECE">ECE</option>
+</select>
+</td></tr>
+<tr>
+<td>
+<label>Degree</label></td>
+<td>
+<input type="radio" ="B.TECH>B.TECH
+<input type="radio" ="B.E>B.E
+</td>
+<tr>
+<td>
+<input type="submit" name="Submit" value="Submit" class="btn btn-outline-success"></td>
+<td><input type="reset" name="clear" value="clear" class="btn btn-outline-danger">
+</td></tr>
+</table>
+</form>
+</fieldset>
+</frameset>                                                           
+</body>
+</html>
